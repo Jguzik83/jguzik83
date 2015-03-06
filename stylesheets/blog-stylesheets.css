@@ -1,4 +1,30 @@
 body {
-background-color: #72F87B;
+background-color: #33B0F3;
 font-family: serif;
+}
+
+h1 {
+  font-family: Comic Sans MS;
+  color: #AB051B;
+  margin: auto;
+  text-align: center;
+  border: solid black;
+  width: 10%;
+}
+h2{
+  text-decoration: underline;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  font-family: sans-serif;
+}
+h4 {
+  font-family: cursive;
+  margin: -1em 0 5px 0;
+  color: gold;
+}
+p {
+  color: white;
+  font-family: monospace;
 }
