@@ -1,0 +1,62 @@
+.wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+header {
+  background-color: cyan;
+  display: inline-block;
+  clear: none;
+  width: 960px;
+}
+side {
+  float: right;
+  margin: 10px 10px 0 0;
+
+}
+middle {
+  background-color: #71EE8C;
+  display: block;
+  height: 425px;
+}
+bottom {
+  background-color: orange;
+  display: block;
+  text-align: center;
+}
+
+#name {
+  color: white;
+  width: 100px;
+  height: 100px;
+  font-size:60px;
+  margin: 0 0 0 300px;
+  }
+#blog {
+  padding: 5px;
+}
+#about {
+  padding: 5px;
+}
+#projects {
+  padding: 5px;
+}
+div {
+  display: inline-block;
+}
+img.small {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+a {
+  color: white;
+  font-size: 25px;
+}
+img.me {
+  width: 225px;
+  height: 225px;
+}
