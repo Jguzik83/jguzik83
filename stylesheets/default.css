@@ -3,7 +3,7 @@
   margin: 0px auto;
 }
 header {
-  background-color: cyan;
+  background-color: #CAD3CC;
   display: inline-block;
   clear: none;
   width: 960px;
@@ -14,12 +14,14 @@ side {
 
 }
 middle {
-  background-color: #71EE8C;
+  background-color: #8884FF;
   display: block;
   height: 425px;
+  background-image: url("https://scontent-lga.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10390198_10202121347339746_2048343221924963833_n.jpg?oh=9f401e34e8faf34512388934f34d5283&oe=557E3408");
+  background-repeat: repeat-y;
 }
 bottom {
-  background-color: orange;
+  background-color: #FFE1AD;
   display: block;
   text-align: center;
 }
@@ -49,14 +51,17 @@ img.small {
   display: inline-block;
 }
 a:hover {
-  color: red;
+  color: #620b0a;
   text-decoration: none;
 }
 a {
-  color: white;
+  color: #013c19;
   font-size: 25px;
 }
 img.me {
-  width: 225px;
-  height: 225px;
+  width: 240px;
+  height: 250px;
+}
+#picture {
+  float: right;
 }
