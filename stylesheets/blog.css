@@ -1,8 +1,7 @@
-}
-table#table1 {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+table {
+  margin: auto;
+  text-align: center;
+
 }
 td#culture {
   font-size: 2em;
@@ -15,8 +14,10 @@ td#technical {
 h1 {
   font-family: Comic Sans MS;
   color: #AB051B;
-  margin: auto;
+  margin: 0 auto 25px;
   text-align: center;
-  border: solid black;
-  width: 10%;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
 }
