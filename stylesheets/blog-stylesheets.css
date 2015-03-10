@@ -28,16 +28,3 @@ p {
   color: white;
   font-family: monospace;
 }
-table#table1 {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-td#cultural {
-  font-size: 3em;
-  color: orange;
-}
-td#technical {
-  font-size: 3em;
-  color: green;
-}

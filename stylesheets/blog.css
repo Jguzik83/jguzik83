@@ -1,0 +1,22 @@
+}
+table#table1 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+td#culture {
+  font-size: 2em;
+  color: orange;
+}
+td#technical {
+  font-size: 2em;
+  color: green;
+}
+h1 {
+  font-family: Comic Sans MS;
+  color: #AB051B;
+  margin: auto;
+  text-align: center;
+  border: solid black;
+  width: 10%;
+}
