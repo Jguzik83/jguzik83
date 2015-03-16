@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <h1>Week 3 Phase 0</h1>
+  <h2>Arrays and Hashes</h2>
+  <h4>3/15/15</h4>
+
+  <section>
+    <p>
+      The first thing I would like to do is describe what exactly an array and a hash are. An array is an ordered, integer-indexed collection of any object. A simple way to understand this is like saying we have a container of pencils, and they are labeled in order from 0 to x, x being the total number of pencils. We can retrieve any one of these pencils (objects) by simply calling on the index the object is placed at. Now a hash on the other hand is a dictionary-like collection of unique keys and their values. So with using the same analogy of the pencils, the container that holds the pencils now has an actual word or key to each place holding spot.
+    </p>
+    <p>
+        So the big question here is when should I use each one. Well that depends on what your trying to do. If you just need a simple setup with an assigned index, an array will work just fine. But if you need something more complex where you need different key values, you use a hash. Lets say you want to create a simple dictionary. If you want to find the definition of a word, using an array would not be a good idea because you would have to know the index of the word, where if you use a hash you can just type the word in and the value will be returned that is associated to the particular key.
+    </p>
+    <p>
+        An example of an array:
+        <CODE>
+          def array(array)
+            empty_array = []
+            array.each do |x|
+              empty_array << x
+            end
+            puts empty_array
+          end
+          array = ([1,2,3,4,5]) => 12345
+        </CODE>
+        <br></br>
+        And here is an example of a hash:
+        <CODE>
+          def hash(hash)
+            empty_hash = {}
+            empty_hash["dog"] = "Bark"
+          end
+          hash(dog)
+        </CODE>
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
