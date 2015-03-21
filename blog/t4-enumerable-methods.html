@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <h1>Week 4 Phase 0</h1>
+  <h2>Enumerable Method</h2>
+  <h4>3/21/15</h4>
+
+  <section>
+    <p>
+      This week I am going to teach you about the ruby method <span>".cycle"</span> The first thing we to do is to take a look at the definition on Ruby docs.<br>
+      The first part of the definition looks like this: <br>
+      <code>cycle(n=nil) {|obj| block} -> nil</code><br>
+      The first part is the <span>.cycle</span> method being called. The <span>(n=nil)</span> is saying that if you don't give the cycle a number, by default n is equal to nil. If cycle doesn't have a n given but does have a block, the cycle will run the block forever because you aren't telling it how many times to cycle. Otherwise, whatever you provide for n, cycle will run the block that many times. If n is a negative number, the block is not run and nil is returned. <span>{|obj| block}</span> is saying that we create a temporary object and run the block n times. Another thing to note that if you run <span>.cycle</span> on an empty object, like an array with nothing in it, nil will be returned as well. So really what cycle does is iterate through an array n times. Lets take a look at a few examples of what we just went over:
+    </p>
+    <p>
+        <code>a = ["a","b","c"]</code><br>
+        <code>a.cycle {|x| puts x} <span>=> will print a,b,c forever!</span></code><br>
+        <code>a.cycle(0) {|x| puts x} <span>=> will print nothing and return nil</span></code><br>
+        <code>a.cycle(1) {|x| puts x} <span>=> will print a b c and return nil</span></code>
+    </p>
+    <p>
+        So lets take a look at what is happening here.
+        <ol>
+          <li> The first thing we did was create a new array, a, and set the attributes in it to a,b,c.</li>
+          <li> The first example we ran cycle on our array but with no n value. Therefore the block will just run forever because we never told it how many times to actually run.</li>
+          <li> The second example we set our n to 0 so we aren't actually going to cycle through anything so the only thing that happens is that nil is returned.</li>
+          <li> In the final example, we set n to 1 so cycle will run the block one times, which is to print(puts) our array a.</li>
+        </ol>
+    </p>
+    <p>
+        Before we get to the second half of the definition, a few key notes to take away from here:
+        <ol>
+          <li> Cycle will iterate over the array</li>
+          <li> n by default is nil</li>
+          <li> If the loop finishes without getting interrupted, nil is returned</li>
+          <li> Cycle saves elements in an internal array, so changes after the first pass have no effect on the original object</li>
+        </ol>
+    </p>
+    <p>
+        The second part of the definition looks like this: <br>
+        <code>cycle(n=nil) -> an enumerator</code><br>
+        What this is saying is that if we run <span>.cycle</span> on an object, an enumerator is returned. Without getting into too much detail, an enumerator is a class that allows both internal and external iterations. I will not go into too much detail because there are many different things you can do within the <span>Enumerator</span> class. So just to touch on it real quick, the object becomes an enumerator and we can run other methods within the enumerator class by setting it equal to a variable such as <code>cycle_enum = a.cycle</code>, then running something like <br><code>cycle_enum.next</code> which will run <span>.next</span> on each element of our original array.
+      </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
