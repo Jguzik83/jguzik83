@@ -9,7 +9,7 @@ h1 {
   margin: auto;
   text-align: center;
   border: solid black;
-  width: 10%;
+  width: 30%;
 }
 h2{
   text-decoration: underline;
@@ -25,6 +25,18 @@ h4 {
   color: gold;
 }
 p {
+  color: white;
+  font-family: monospace;
+}
+code {
+  background-color: black;
+  color: white;
+  margin-left: 2em;
+}
+span {
+  color: #00FF09;
+}
+li {
   color: white;
   font-family: monospace;
 }
