@@ -40,3 +40,11 @@ li {
   color: white;
   font-family: monospace;
 }
+a {
+  color: red;
+  font-size: 2em;
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
