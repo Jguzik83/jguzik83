@@ -48,3 +48,7 @@ a:hover {
   color: yellow;
   text-decoration: none;
 }
+
+#links {
+  font-size: 1em;
+}

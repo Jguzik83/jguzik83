@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <h1>Week 5 Phase 0</h1>
+  <h2>Classes</h2>
+  <h4>3/27/15</h4>
+
+  <section>
+    <p>
+      This week we dealt with classes in Ruby. First thing to do is to discuss what a class is. A class is essentially the blueprint for whatever object you want to control. An example to use is that of a car. A car can do many different tasks, such as drive forward, reverse, honk a horn, etc. We can describe all these different veihicle functions the <span>methods</span> and they are all a part of the <span>class</span> vehicles. Another important term to know is instance variable, which is a variable that we can set with an @ sign before it and we can carry this variable over all methods within the class. These variable are not to be confused with local variables which only exist in the method they are in. I will show you the difference with the program that I wrote to convert temperature from Celcius to Fahrenheit or from Fahrenheit to Celcius.
+    </p>
+    <p>
+        If you pull up <a id="links" href="https://github.com/billkozby83/billkozby83.github.io/blob/master/work.rb">this file</a>
+        you can see the program in its entirity. The first part to look at is the first line which creates the new class TempConvert. I decided to write three methods for this class to make it do a few different things. In the get_temp method, I want the user to input the temperature they want to convert and what degree type they want to use. Fahrenheit to Celcius or Celcius to Fahrenheit. Here is the first example of an instance variable. What we are doing here is setting the variable temp as an instance variable that we can use throughout the class of TempConvert. I chose it this way because I am using different methods to do different things to keep the readablity at an easily understandable level. Whatever we input now for temp we can take with us to another method. The next variable that I used was a local variable for what conversion we will be doing. Because I don't need this variable outside of the get_temp method, it does not need to be defined as an instance variable. All it is doing is telling the program what to do next as far as conversions go. I downcased it to just so both capitalized and non-capitalize inputs will work. The final thing is that if a choice that can not be recognized is given we run the loop over again until correct input is given. The next 2 methods are my conversion methods which take the original number and do the appropriate conversion, returning that result as the variable @result which will carry over back to the original method.
+    </p>
+    <p>
+        I think that classes really help with the organization of your code. As programs become more developed and more complex, keeping track of things on a more individualized level will help with testing and debugging.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
