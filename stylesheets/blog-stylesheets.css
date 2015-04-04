@@ -52,3 +52,15 @@ a:hover {
 #links {
   font-size: 1em;
 }
+
+#code2 {
+  background-color: black;
+  color: white;
+  margin-left: 3em;
+}
+
+#code3 {
+  background-color: black;
+  color: white;
+  margin-left: 4em;
+}

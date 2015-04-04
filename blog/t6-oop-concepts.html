@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <h1>Week 6 Phase 0</h1>
+  <h2>Variable Scope</h2>
+  <h4>4/3/15</h4>
+
+  <section>
+    <p>
+      This week I spent a lot of time learning about different variables and their scope. First off, what is scope? Scope defines where in a program a variable is accessible. As an example, lets pretend that my office has wifi (it does by the way!). Now throughout my house, anyone can pick up the wifi as long as they are connected. If you walk out the back door, however, you will lose the wifi connection. So the scope of our wifi is in the house only. This very basic idea can be applied to different variables within Ruby. Lets go through them one at a time.
+    </p>
+    <p>
+        The first type of variable we will talk about is local variable. Local variables only exist in the method or code block in which they are constructed in. So if we have a simple method:<br><code>def house</code><br> <code id="code2">house = "My House"</code><br><code>end</code><br>If we run this program, the output will be <span>My House</span>. The variable house is a local variable. It doesn't exist outside of the method house. So if we create a second method:<br>
+        <code>def your_house</code><br><code id="code2">house = "Your House"</code><br><code>end</code><br> The variable house can be used again without any conflict. Local variables can be declared by using lowercase letters or starting with an underscore _
+    </p>
+    <p>
+        The second type of variable is global variable. Global variables are accessible from anywhere in the Ruby program, regardless of where they are declared. Lets take a look at a simple example: <br><code>$new_house = "New House"</code><br><code>def new house</code><br><code id="code2">$new_house</code><br><code>end</code><br>In this example, we declared the variable before the method, and set it as a global variable by using the dollar sign before <span>new_house</span>. So no matter how many methods we create, we can use <span>$new_house</span> anywhere we want. Global variables are generally discouraged because they are visable anywhere in the code and can be changed from anywhere in the application. This can cause major headaches when your are trying to debug.
+    </p>
+    <p>
+        The third type of variable is a class variable. Class variables are available throughout a class or module body and must be initialized before use. Class variables are shared among all instances of a class and is available within the class itself. What this is saying that is if we create a class variable, it will be able to be used throughout the class and will be passed on through inheritance of sub-classes. Additionally, if you redefine a class variable in a child class off the parent class, the variable will override what is set in the parent class. Lets take a look:<br><code>class Top</code><br><code id="code2">@@A = "top A"</code><br><code id="code2">@@B = "top B"</code><br><code id="code2">def display</code><br><code id="code3">puts values</code><br><code id="code2">end</code><br><code id="code2">def values</code><br><code id="code3">"#{self.class.name}: @@A = #@@A, @@B = #@@B"</code><br><code id="code2">end</code><br><code>end</code><br><br><code>class Middle < Top</code><br><code id="code2">@@B = "One B"</code><br><code id="code2">@@C = "One C"</code><br><code id="code2">def values</code><br><code id="code3">super + ", C = #@@C"</code><br><code id="code2">end</code><br><code>end</code><br>Wow that is a lot going on there. Lets try and break it down. If we were to run this code, we would enter <span>Top.new.display</span> This will print out<br> <span>Top: @@A = top A, @@B = One B</span>.<br> The next thing we will do is input <span>Middle.new.display</span> This will print out <br><span>Middle:@@A = Top A, @@B = One B, C = One C</span><br>So what happened. We see that our @@B variable was over-ridden in the child class, and this was then passed on through inheritance to the parent class. Because of the changing of the variable in a child class will affect the parent class, I read that most programmers will try and avoid class variables as well. If you didn't see it, we define class variables by using @@ before the variable.
+    </p>
+    <p>
+        The fourth type of variable is called an instance variable. Instance variables values are local to the specific instances of an objoect. What that means is that we can use these variables throughout our class and whose purpose is to store information for individual objects. Lets take a look:<br><code>class Variable</code><br><code id="code2">def initialize</code><br><code id="code3">@example = "Here I am"</code><br><code id="code2">end</code><br><br><code id="code2">def display</code><br><code id="code3">puts @example</code><br><code id="code2">end</code><br><br><code>end</code><br>So if we were to type in <span>Variable.new.display</span> the result would be: <br><span>Here I am</span><br>Here we can see that although we defined the variable in a different method, because it is still part of the same class we can use it in another method.
+    </p>
+    <p>
+        There is unlimited amount of information on how and when you should use each variable. The best practice is to use the variable type that is the most local you can use for the purpose you are intending to use. What that means is try not to use say an instance variable when all you need the variable for is to define one thing in one method, only to never need that information again. And staying as local as possible with your scope can save you multiple headaches later down the road if you encounter a bug of some kind. As always, happy coding!
+      </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
