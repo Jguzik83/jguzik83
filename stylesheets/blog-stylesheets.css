@@ -27,6 +27,7 @@ h4 {
 p {
   color: white;
   font-family: monospace;
+  text-indent: 3em;
 }
 code {
   background-color: black;

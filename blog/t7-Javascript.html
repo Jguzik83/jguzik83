@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <h1>Week 7 Phase 0</h1>
+  <h2>Javascript vs. Ruby</h2>
+  <h4>4/10/15</h4>
+
+  <section>
+    <p>
+      Oh sweet sweet JavaScript, how I find you just irritating enough to complain about but not enough to push through and learn all that I can about you. Based on the this week's blog title you can assume that we started to learn JavaScript (JS). Before I get into the details about how it differs from Ruby, let me first explain my current feelings towards this new language in a very vague and generalized discussion. We have been spending the last several weeks learning Ruby and all that the language can do. This week, however, it is like we decided to learn about Ruby's little brother who is still learning how to follow rules, and likes to do certain things its own way. The reason I find the little brother so upsetting is that you can see all the potential it could come to if it would just grow up to Ruby, but all the little things that are different are just enough to drive you mad. Let me let that be my precursor for the rest of this blog, my prologue so to speak.
+    </p>
+    <p>
+      The first thing that is important to understand is that JavaScript is not Java. When JS was first being introduced, it was originally called LiveScript but Java was the hot language at the time, so the developers decided to rename it JS hoping to jump on the Java bandwagon. Unfortunately for the newcomer it did catch on but most will always think there is a direct correlation between the two and there is not. Based on what I have learned thus far, however, there do seem to be a lot of similarities between JS and Ruby. The main thing that I noticed to be similar is that of the design and flow of how the code is set up. They both use the object oriented design approach, in my opinion, which definitely helps learn the new material. However, there are several major differences that really make JS stand apart from Ruby. Today we will be looking at one such topic, and that is looping in Ruby vs. looping in JS.
+    </p>
+    <p>
+        To begin, we will talk about how we loop in ruby. There are a few ways to create a loop, one of the most basic is creating a while loop. Here we can define that as long as something is true, continue to do until false. We can set this up to read the other way around, but for this example we will focus on the true statement. Lets take a look:<br>
+        <code>counter = 0</code><br>
+        <code>while counter < 5</code><br>
+        <code id="code2">puts "Hello"</code><br>
+        <code id="code2">counter += 1</code><br>
+        <code>end</code><br>
+        This loop will print to the screen <span>Hello</span> five times. From top to bottom, this basic loop is very readable: we create a new variable counter and set it to 0. Then we check if counter is less than 5. Since counter is 0 the while statement is true so we enter the loop. We then print Hello and on the next line we increase the counter by 1. The loop repeats this process until counter = 5 which will make the while test false, thus ending our loop. Now lets look at the same loop in JS.<br>
+        <code>counter = 0</code><br>
+        <code>while (counter < 5) { </code><br>
+        <code id="code2">console.log("Hello"); </code><br>
+        <code id="code2">counter += 1;</code><br>
+        <code>}</code><br>
+        This time although the code looks very similar, there are a few slight differences. The first thing is the curly brackets that start next to (counter < 5). We use the curly brackets to tell the statement that the following lines of code are grouped together. The second thing to notice is that to print to the screen, we now use console.log and put what we want to print inside parentheses. We increase the counter the same way and then instead of using an end like before, we close out our curly brackets. These two loops are very similar, so lets take a look at another kind of loop that has major differences: the for loop and iteration.
+    </p>
+    <p>
+        In computer language, we use the term iterate to explain that we want a particular thing to happen over and over again until we finish what we want it to. Its the equivelent of saying "instead of saying print this 5 times, i will use 1 line of code to tell the computer to execute the same thing over and over." Its best to look at example like we did before. First up, Ruby. <br>
+        <code>(1..12).each do |x| x + 2 </code><br>
+        <code id="code2">puts x</code></br>
+        <code>end</code><br>
+        This iteration is telling the interpreter that from the numbers 1 thru 12, go over each number and create a temporary variable called 'x'. To this 'x', we are going to add 2 it. The on the next line, we tell the computer to print the variable 'x' to the screen. This will repeat for all numbers. Next, we will take a look at how we can do the same thing in JS using a for loop.<br>
+        <code>for (var counter = 1; counter <= 12; counter +=1)</code><br>
+        <code id="code2">console.log(counter + 2);</code><br>
+        So in the JS version, we start with the word for to creat the loop. Inside the parentheses we need at least 2 semicolons. The part before the first semicolon is what initializes the loop, usually by defining a variable which is what we did here. Notice that when we define a variable in JS we have to use <span>var</span> first. The second part is the expression that checks wheter the loop must continue. Here as long as counter is less than or equal to 12. I set it up this way to follow the same parameters as in the Ruby example. The final part inside the parenthesis is what updates the state of the variable after every iteration. On the next line, is our output, which is simply using the console.log again, then taking our current number and adding 2 to it.
+      </p>
+      <p>
+        As you can see there are many similarties between the two languages, yet very distinct differences as well. My suggestion is to get as familiar with one language as possible before starting to learn the other language, as this helps you get closer to perfection to one rather than kind of knowing one version and kind of knowing another. It is only because of the similarites that I suggest this, but to each his/her own!
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
