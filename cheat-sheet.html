@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <title>Cheat Sheet</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheatsheet-stylesheet.css">
+</head>
+
+ <h1>SQL Cheat Sheet</h1>
+
+ <h2>SQL Cheat Sheet</h2>
+<main id="blogEnt">
+ <section>
+    <p>
+       <h3>Create Database</h3>
+        <ul>
+          <li>Show table
+             <h4>SELECT * FROM table;</h4></li>
+          <li>Create table
+              <h4>CREATE TABLE table_name</h4></li>
+              <div id="example">Example CREATE TABLE Persons
+              (
+              <br>  P_Id int NOT NULL,
+              <br>  LastName varchar(255) NOT NULL,
+              <br>  FirstName varchar(255),
+              <br>  Address varchar(255),
+              <br>  City varchar(255),
+              <br>  PRIMARY KEY (P_Id)
+              )
+              </div>
+          <li>Insert/add to table
+              <h4>INSERT INTO table_name</h4>
+              <h4>VALUES(value#1, value#1…);</h4></li>
+          <li>Delete
+              <h4>DELETE FROM table_name
+              </h4>
+              <h4>WHERE some_column = some_value;</h4></li>
+          <li>Create index
+              <h4>CREATE INDEX index_name;</h4></li>
+        </ul>
+    </p>
+    <p>
+      <h3>Query Database</h3>
+       <ul>
+         <li>Select from table</li>
+
+          <ul>
+            <li>Between
+               <h4>SELECT value FROM WHERE coulomb_name BETWEEN value_1 AND value_two; </h4></li>
+            <li>Like
+                <h4>SELECT value FROM table WHERE coulomb_name LIKE pattern;</h4></li>
+            <li>Wildcards
+                <h4>SELECT * FROM table WHERE value LIKE “wildcard”</h4><ul>
+                  <li>%- A substitute for zero or more characters</li>
+                  <li>_ A substitute for a single character</li>
+                </ul></li>
+            <li>AND/OR
+                <h4>SELECT column_name(s) FROM table_name WHERE condition AND|OR conditionOrder by/group by</h4></li>
+            <li>ORDER BY
+                <h4>coulomb_name ASC/DESC</h4> </li>
+          </ul>
+        <li>Joins</li>
+          <ul>
+            <li>Inner Join/ Join<h4>
+                 Returns all rows when there is at least one match in BOTH tables</h4></li>
+            <li>LEFT JOIN<h4>
+                Return all rows from the left table, and the matched rows from the right table</h4></li>
+            <li>RIGHT JOIN<h4>
+                 Return all rows from the right table, and the matched rows from the left table</h4></li>
+            <li>FULL JOIN<h4>
+                 Return all rows when there is a match in ONE of the tables</h4></li>
+          </ul>
+          <div id="example">SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate<br>          FROM Orders INNER JOIN Customers
+          ON Orders.CustomerID=Customers.CustomerID;
+</div>
+        </ul>
+    </p>
+  </section>
+</main>
