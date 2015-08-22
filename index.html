@@ -1,42 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Jason Guzik></title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-  <title>JG HomePage></title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/application.js"></script>
 </head>
 <body>
-  <div id="main">
-    <header>
-      <div id="welcome">
-        <h3><img src="https://mail.google.com/mail/u/0/?ui=2&ik=88dcfa3f1e&view=att&th=14bf05620922800e&attid=0.1&disp=safe&realattid=f_i6xwxl5j0&zw" id="small"/>Jason Guzik</h3>
-      </div>
-      <nav>
-        <div id="options">
-
-          <ul id="nav">
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blog</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="mailto:jguzik@gmail.com">Email<a/></li>
-          </ul>
-        </div>
-      </nav>
-      <img src="https://avatars0.githubusercontent.com/u/9114141?v=3&s=460" id="me"/>
-      <p>So just a little about me. My name is Jason and I am currently 32 years young. I used to work for Hess Corporation as a Terminal Operator. After working there for about 7 and half years I decided to make a total career change. I am currently enrolled at Dev Bootcamp in NYC and am learning all that I can about backend programming, specifically Ruby on Rails. Please take a look at my blogs. I will update this as often as I can, but please remember that this is still under construction.</p>
-    </header><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div id="footer">
-      <ul id="bottom-nav">
-
-            <li><a href="https://github.com/billkozby83/billkozby83.github.io.git">GitHub</a></li>
-            <li><a href="https://twitter.com/Billkozby83">Twitter</a></li>
-            <li><a href="https://plus.google.com/u/0/118235189823083336831/about">Google+</a></li>
-            <li><a href="www.linkedin.com/in/jguzik83">LinkedIn<a/></li>
-          </ul>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jason Guzik</a>
     </div>
 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="blogs.html">Blog Posts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://code-hive.herokuapp.com/">The Hive</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://snackoverflow2015.herokuapp.com/">StackOverflow Clone</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Works in Progress</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class='container-fluid background_paragraph'>
+  <p>My name is Jason and I am Jr. full stack web developer. I recently graduated from Dev Bootcamp, which is an intense 19 week program where we are taught not only how to code, but how to learn how to learn. People always ask me what does that mean, learn to learn? I tell them its the ability to learn a new technology that I didn't previously know by using techniques to decipher the unkown. I would like you to take a look around my site and message me at anytime. You can see my final project for DBC from the projects drop down and select The Hive.</p>
+  <p>When I'm not making beautiful and meaningful things, I enjoy spending my free time with my wife and our 2 dogs. I enjoy bowling and playing poker, although I tend to lose all my money when I play!!! Other than that, a nice quiet night with the grill and a fire going is where you will find me most often.
+  </p>
+  <p>This site is going to be a constant work in progress...come back often!</p>
+</div>
+<div class='container-fluid middleground'>
+  <div class='image_gallery'>
+    <div class='row'>
+      <div class='col-xs-3 col-md-2'>
+        <img src='images/ruby.jpg' class='img-responsive thumbnail animate_this'>
+      </div>
+      <div class='col-xs-3 col-md-2'>
+        <img src='images/jquery-modern-logo.jpg' class='img-responsive thumbnail animate_this'>
+      </div>
+      <div class='col-xs-3 col-md-2'>
+        <img src='images/js.png' class='img-responsive thumbnail animate_this'>
+      </div>
+      <div class='col-xs-3 col-md-2'>
+        <img src='images/Ruby_on_Rails.svg.png' class='img-responsive thumbnail animate_this'>
+      </div>
+      <div class='col-xs-3 col-md-2'>
+        <img src='images/Boostrap_logo.svg.png' class='img-responsive thumbnail animate_this'>
+      </div>
+      <div class='col-xs-3 col-md-2'>
+        <img src='images/rspec.png' class='img-responsive thumbnail animate_this'>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class='container-fluid'>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="quotes/quote1.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote2.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote3.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote4.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote5.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote6.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote7.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote8.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote9.jpg" class="img-responsive center-block">
+    </div>
+    <div class="item">
+      <img src="quotes/quote10.jpg" class="img-responsive center-block">
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+</div>
+
+<!--This is the footer-->
+<div class='navbar navbar-default navbar-fixed-bottom'>
+  <div class='container-fluid'>
+    <p class='navbar-text pull-center'>Site Built By Jason Guzik using Bootstrap 3.3.5  All Rights Reserved</p>
+    <a href='https://twitter.com/Jguzik83'><img src='images/twitter.png' class='img-responsive pull-right' width='40' height='40'</a>
+    <a href='https://plus.google.com/u/0/118235189823083336831/about'><img src='images/googleplus.png' class='img-responsive pull-right' width='40' height='40'</a>
+    <a href='https://www.linkedin.com/in/jguzik83'><img src='images/linkedin.png' class='img-responsive pull-right' width='40' height='40'</a>
+    <a href='https://github.com/Jguzik83'><img src='images/github.png' class='img-responsive pull-right' width='40' height='40'</a>
+    <a href='mailto:jguzik@gmail.com'><img src='images/email.png' class='img-responsive pull-right' width='40' height='40'</a>
+  </div>
+</div>
 
 </body>
 </html>

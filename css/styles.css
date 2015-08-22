@@ -1,0 +1,26 @@
+.background_paragraph {
+  background-color: #FFF8E9;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.animate_this {
+  /*margin-right: 5em;*/
+  /*margin-bottom: 5em;*/
+  /*display: inline;*/
+  /*padding-top: 3em;*/
+}
+
+.middleground {
+  background-image: url('../images/code_background_Fotor.png');
+  background-repeat: no-repeat;
+}
+
+.image_gallery {
+  margin-left: 2em;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
